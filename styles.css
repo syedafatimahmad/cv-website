@@ -1,0 +1,243 @@
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* ========== Header & Navigation ========== */
+header {
+  background: #0a2e4d;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+header a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ========== Sections ========== */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #0a2e4d;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.projects a.project-card {
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects a.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+
+/* Contact Form */
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0a2e4d; /* theme color */
+  outline: none; /* remove browser default */
+  box-shadow: 0 0 0 3px rgba(10, 46, 77, 0.15); /* custom focus ring */
+}
+
+
+form button {
+  background: #0a2e4d;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #08345d;
+}
+
+fieldset {
+  border: none;        /* removes the box border */
+  padding: 0;          /* removes extra padding inside */
+  margin: 0;           /* removes extra margin */
+}
+
+legend {
+  font-weight: bold;   /* make legend stand out */
+  font-size: 1.1em;    /* slightly bigger text */
+  margin-bottom: 8px;  /* adds spacing below legend */
+}
+
+
+/* Footer */
+footer {
+  background: #0a2e4d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Resume Section */
+.resume {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.resume h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0a2e4d;
+  font-size: 1.2rem;
+}
+
+.resume ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.resume p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* Media Section */
+.media-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.media-content iframe,
+.media-content audio {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+/* Figure Styling */
+.about figure {
+  text-align: center;
+}
+
+.about figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
